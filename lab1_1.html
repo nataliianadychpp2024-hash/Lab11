@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Робота з діалоговими вікнами</title>
+	</head>
+	<body>
+		<script> 
+			"use strict";
+			const name = prompt("Введіть ваше ім'я:", "Гість");
+			alert("*Це діалогове вікно*"); 
+			const answer=confirm("Бажаєте продовжити?");
+			if (answer) { 
+    				alert("Повідомляю про повідомлення!");
+				} 
+			else {
+    				const why = prompt("Чому?");
+    				alert("Шкода :(");
+				}
+		</script>
+	</body>
+</html>
