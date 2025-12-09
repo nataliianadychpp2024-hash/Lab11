@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Обчислення арифметичних виразів</title>
+	</head>
+	<body>
+		<script>
+			"use strict";
+			const operation = prompt("Оберіть операцію: + для додавання, - для віднімання", "+");
+			const num1 = parseFloat(prompt("Введіть перше число:", "0"));
+			const num2 = parseFloat(prompt("Введіть друге число:", "0"));
+			let result;
+			if (operation === "+") {
+    				result = num1 + num2;
+				} 
+			else if (operation === "-") {
+    				result = num1 - num2;
+				} 
+			else {
+    				alert("Невідома операція!");
+				}
+
+// Показуємо результат
+			if (result !== undefined) {
+    				alert("Результат: " + result);
+				}
+		</script>
+	</body>
+</html>
